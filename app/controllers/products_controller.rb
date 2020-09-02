@@ -13,7 +13,15 @@ class ProductsController < ApplicationController
     redirect_to root_path
   end
 
-  def post_params
-    params.require(:product).permit(:name, :price)
+  def destroy
+    product = Product.find(params[:id])
+    product.destroy
+    redirect_to root_path
   end
+
+  private
+  def post_params
+    params.require(:product).permit(:id, :name, :price)
+  end
+
 end

@@ -29,7 +29,8 @@
           = product.name
         .display-part__price
           = product.price 
-          円(税込み)
+          円(税込)
+        = link_to "削除", product_path(product.id), class: "display-part__delete-btn", method: :delete
   .index-main__scroll
     <i class="fas fa-angle-left btn-icon"></i>
     .page-count

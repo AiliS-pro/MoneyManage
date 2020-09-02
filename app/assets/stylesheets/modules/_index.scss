@@ -80,6 +80,17 @@
         top: 0px;
         right: 80px;
       }
+      &__delete-btn {
+        float: left;
+        padding: 0 10px;
+        height: 60%;
+        line-height: 48px;
+        position: absolute;
+        top: 16px;
+        right: 10px;
+        background: rgba(150, 150, 255, 0.8);
+        
+      }
     }
   }
   &__scroll {
