@@ -1,15 +1,4 @@
-
-.header
-  .header__date
-    = Time.current.month
-    月
-    = Time.current.day
-    日
-  = link_to root_path, class: "header__title" do
-    MoneyManage
-  = link_to root_path, class: "header__add-book" do
-    帳簿追加
-
+= render "header"
 
 .main
 
@@ -47,14 +36,4 @@
       １
     <i class="fas fa-angle-right btn-icon"></i>
 
-.footer
-  .footer__box
-    開発環境など
-    .use-gem1
-      kaminari(何だっけ？)
-    .use-gem2
-      chartkick(使うはず)
-    .use-gem3
-      ancestry(多分使わない)
-  .project-name
-    あいりすぷろじぇくと！
+= render "footer"
