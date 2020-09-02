@@ -1,8 +1,8 @@
 = render "header"
 
-.main
+.index-main
 
-  .main__btns
+  .index-main__btns
     .previous-btn-box
       .btn-text
         前月へ
@@ -14,13 +14,13 @@
       =link_to root_path, class: "btn-icon" do
         <i class="fas fa-arrow-right btn-icon"></i>
 
-  .main__graphs
+  .index-main__graphs
     .sum-graph
       月使用額合計のグラフ
     .average-graph
       １日ごとの使用グラフ
 
-  .main__displays
+  .index-main__displays
     - @product.each do |product|
       .display-part
         .display-part__date
@@ -30,7 +30,7 @@
         .display-part__price
           = product.price 
           円(税込み)
-  .main__scroll
+  .index-main__scroll
     <i class="fas fa-angle-left btn-icon"></i>
     .page-count
       １

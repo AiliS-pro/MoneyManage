@@ -6,6 +6,7 @@ $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
 @import '@fortawesome/fontawesome-free/scss/v4-shims';
 @import "reset";
 @import "settings";
-@import "modules/products";
+@import "modules/index";
+@import "modules/new";
 @import "modules/header";
 @import "modules/footer";

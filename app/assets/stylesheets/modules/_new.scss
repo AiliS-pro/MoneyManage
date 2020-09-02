@@ -1,0 +1,55 @@
+.new-main {
+  width: 1140px;
+  height: 600px;
+  background: rgb(250,250,250);
+  padding: 100px 150px 0px 150px;
+  margin: 0 auto;
+  .form-box {
+    width: 800px;
+    height: 460px;
+    border: 4px solid blue;
+    border-radius: 6px;
+    margin: 0 auto;
+    margin-top: 60px;
+    &__name {
+      width: 600px;
+      height: 80px;
+      margin-left: 100px;
+      margin-top: 40px;
+      border: 1px solid blue;
+      border-radius: 4px;
+      font-size: 32px;
+    }
+    &__name:hover {
+      cursor: text;
+    }
+    &__price {
+      width: 600px;
+      height: 80px;
+      margin-left: 100px;
+      margin-top: 40px;
+      border: 1px solid blue;
+      border-radius: 4px;
+      font-size: 32px;
+    }
+    &__price:hover {
+      cursor: text;
+    }
+    &__add-btn {
+      width: 300px;
+      height: 100px;
+      margin-left: 250px;
+      margin-top: 60px;
+      border: 2px solid blue;
+      border-radius: 6px;
+      font-size: 36px;
+      font-weight: bold;
+      background: rgba(150, 150, 255, 0.8);
+    }
+    &__add-btn:hover {
+      background: rgba(150, 150, 255, 0.6);
+      cursor: pointer;
+    }
+  }
+}
+
