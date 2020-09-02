@@ -1,5 +1,5 @@
 .header {
-  width: 100vw;
+  width: 1440px;
   height: 100px;
   background: rgba(0,0,255,1);
   opacity: 0.9;
@@ -8,14 +8,13 @@
   display: flex;
   justify-content: space-between;
   &__date {
-    border: 1px solid black;
     color: white;
     height: 80px;
     width: 160px;
     margin: 10px;
     line-height: 80px;
     text-align: center;
-    font-size: 32px;
+    font-size: 28px;
   }
   &__title {
     height: 100px;
@@ -51,7 +50,7 @@
 }
 
 .main {
-  width: 80vw;
+  width: 1140px;
   height: 1200px;
   background-color: honeydew;
   padding: 100px 150px 0px 150px;
@@ -111,45 +110,28 @@
     border: 2px solid black;
     margin: 0 auto;
     margin-top: 40px;
-    .display-part1 {
+    .display-part {
       width: 560px;
       height: 80px;
       margin: 20px;
       border: 1px solid black;
-      line-height: 100px;
-      text-align: center;
-    }
-    .display-part2 {
-      width: 560px;
-      height: 80px;
-      margin: 20px;
-      border: 1px solid black;
-      line-height: 100px;
-      text-align: center;
-    }
-    .display-part3 {
-      width: 560px;
-      height: 80px;
-      margin: 20px;
-      border: 1px solid black;
-      line-height: 100px;
-      text-align: center;
-    }
-    .display-part4 {
-      width: 560px;
-      height: 80px;
-      margin: 20px;
-      border: 1px solid black;
-      line-height: 100px;
-      text-align: center;
-    }
-    .display-part5 {
-      width: 560px;
-      height: 80px;
-      margin: 20px;
-      border: 1px solid black;
-      line-height: 100px;
-      text-align: center;
+      line-height: 80px;
+      position: relative;
+      font-size: 16px;
+      &__date {
+        float: left;
+        margin: 0 10px;
+      }
+      &__name {
+        float: left;
+        margin: 0 40px;
+      }
+      &__price {
+        float: left;
+        position: absolute;
+        top: 0px;
+        right: 80px;
+      }
     }
   }
   &__scroll {
@@ -179,7 +161,7 @@
 }
 
 .footer {
-  width: calc(100vw - 160px);
+  width: 1280px;
   height: 140px;
   padding: 40px 80px;
   background: rgba(0,0,255,1);
