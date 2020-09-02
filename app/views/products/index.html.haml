@@ -1,0 +1,59 @@
+
+.header
+  .header__date
+    今日の日付
+  = link_to root_path, class: "header__title" do
+    MoneyManage
+  = link_to root_path, class: "header__add-book" do
+    帳簿追加
+
+
+.main
+
+  .main__btns
+    .previous-btn-box
+      .btn-text
+        前月へ
+      =link_to root_path, class: "btn-icon" do
+        <i class="fas fa-arrow-left btn-icon"></i>
+    .next-btn-box
+      .btn-text
+        今月へ
+      =link_to root_path, class: "btn-icon" do
+        <i class="fas fa-arrow-right btn-icon"></i>
+
+  .main__graphs
+    .sum-graph
+      月使用額合計のグラフ
+    .average-graph
+      １日ごとの使用グラフ
+
+  .main__displays
+    .display-part1
+      商品１ 値段１ （税込み）
+    .display-part2
+      商品２ 値段２ （税込み）
+    .display-part3
+      商品３ 値段３ （税込み）
+    .display-part4
+      商品４ 値段４ （税込み）
+    .display-part5
+      商品５ 値段５ （税込み）
+
+  .main__scroll
+    <i class="fas fa-angle-left btn-icon"></i>
+    .page-count
+      １
+    <i class="fas fa-angle-right btn-icon"></i>
+
+.footer
+  .footer__box
+    開発環境など
+    .use-gem1
+      kaminari(何だっけ？)
+    .use-gem2
+      chartkick(使うはず)
+    .use-gem3
+      ancestry(多分使わない)
+  .project-name
+    あいりすぷろじぇくと！

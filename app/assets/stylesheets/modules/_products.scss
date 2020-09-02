@@ -1,0 +1,206 @@
+.header {
+  width: 100vw;
+  height: 100px;
+  background: rgba(0,0,255,1);
+  opacity: 0.9;
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  &__date {
+    border: 1px solid black;
+    color: white;
+    height: 80px;
+    width: 160px;
+    margin: 10px;
+    line-height: 80px;
+    text-align: center;
+    font-size: 32px;
+  }
+  &__title {
+    height: 100px;
+    width: 320px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 90px;
+    text-align: center;
+  }
+  &__title:hover {
+    background: $hover-color;
+  }
+  &__title:active {
+    background: $active-color;
+  }
+
+  &__add-book {
+    height: 100px;
+    width: 100px;
+    margin: 0px 40px;
+    color: white;
+    font-size: 24px;
+    line-height: 100px;
+    text-align: center;
+  }
+  &__add-book:hover {
+    background: $hover-color;
+  }
+  &__add-book:active {
+    background: $active-color;
+  }
+}
+
+.main {
+  width: 80vw;
+  height: 1200px;
+  background-color: honeydew;
+  padding: 100px 150px 0px 150px;
+  margin: 0 auto;
+  z-index: 0;
+  &__btns {
+    width: 1000px;
+    height: 60px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    .previous-btn-box {
+      width: 50px;
+      height: 60%;
+    }
+    .next-btn-box {
+      width: 50px;
+      height: 60%;
+    }
+    .btn-text {
+      font-size: 16px;
+    }
+    .btn-icon {
+      font-size: 40px;
+      color: blue;
+      margin-left: 4px;
+    }
+    .btn-icon:hover {
+      color: rgb(0,100,255);
+    }
+    .btn-icon:active {
+      color: rgb(0,255,255);
+    }
+  }
+  &__graphs {
+    width: 900px;
+    height: 350px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    .sum-graph {
+      background-color: cornsilk;
+      width: 340px;
+      height: 340px;
+      border: 2px solid black;
+    }
+    .average-graph {
+      background-color: cornsilk;
+      width: 340px;
+      height: 340px;
+      border: 2px solid black;
+    }
+  }
+  &__displays {
+    width: 600px;
+    height: 37vw;
+    border: 2px solid black;
+    margin: 0 auto;
+    margin-top: 40px;
+    .display-part1 {
+      width: 560px;
+      height: 80px;
+      margin: 20px;
+      border: 1px solid black;
+      line-height: 100px;
+      text-align: center;
+    }
+    .display-part2 {
+      width: 560px;
+      height: 80px;
+      margin: 20px;
+      border: 1px solid black;
+      line-height: 100px;
+      text-align: center;
+    }
+    .display-part3 {
+      width: 560px;
+      height: 80px;
+      margin: 20px;
+      border: 1px solid black;
+      line-height: 100px;
+      text-align: center;
+    }
+    .display-part4 {
+      width: 560px;
+      height: 80px;
+      margin: 20px;
+      border: 1px solid black;
+      line-height: 100px;
+      text-align: center;
+    }
+    .display-part5 {
+      width: 560px;
+      height: 80px;
+      margin: 20px;
+      border: 1px solid black;
+      line-height: 100px;
+      text-align: center;
+    }
+  }
+  &__scroll {
+    width: 400px;
+    height: 60px;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    .btn-icon {
+      width: 40px;
+      height: 40px;
+      margin: 10px;
+      color: blue;
+      font-weight: normal;
+    }
+    .page-count {
+      width: 40px;
+      height: 40px;
+      margin: 10px;
+      text-align: center;
+      line-height: 40px;
+      font-size: 20px;
+    }
+  }
+
+}
+
+.footer {
+  width: calc(100vw - 160px);
+  height: 140px;
+  padding: 40px 80px;
+  background: rgba(0,0,255,1);
+  opacity: 0.9;
+  display: flex;
+  justify-content: space-between;
+  &__box {
+    margin-left: 100px;
+    background-color: white;
+    .use-gem1 {
+      padding: 5px;
+    }
+    .use-gem2 {
+      padding: 5px;
+    }
+    .use-gem3 {
+      padding: 5px;
+    }
+  }
+  .project-name {
+    margin-top: 120px;
+    background-color: white;
+  }
+}
