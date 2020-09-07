@@ -1,7 +1,7 @@
 class ProductsController < ApplicationController
 
   def index
-    @product = Product.all
+    @products = Kaminari.paginate_array(Product.all).page(params[:page]).per(5)
   end
 
   def new
@@ -9,7 +9,7 @@ class ProductsController < ApplicationController
   end
 
   def create
-    Product.create(post_params)
+    Product.create(product_params)
     redirect_to root_path
   end
 
@@ -20,7 +20,7 @@ class ProductsController < ApplicationController
   end
 
   private
-  def post_params
+  def product_params
     params.require(:product).permit(:id, :name, :price)
   end
 

@@ -21,7 +21,7 @@
       １日ごとの使用グラフ
 
   .index-main__displays
-    - @product.each do |product|
+    - @products.each do |product|
       .display-part
         .display-part__date
           = product.created_at.strftime('%m月%d日')
@@ -32,9 +32,6 @@
           円(税込)
         = link_to "削除", product_path(product.id), class: "display-part__delete-btn", method: :delete
   .index-main__scroll
-    <i class="fas fa-angle-left btn-icon"></i>
-    .page-count
-      １
-    <i class="fas fa-angle-right btn-icon"></i>
+    = paginate @products
 
 = render "footer"
