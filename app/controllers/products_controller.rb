@@ -1,6 +1,8 @@
 class ProductsController < ApplicationController
 
   def index
+    @product_graphs = Product.all
+    # @product_graphs_sum = Product.sum_chart
     @products = Kaminari.paginate_array(Product.all).page(params[:page]).per(5)
   end
 

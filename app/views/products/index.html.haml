@@ -16,9 +16,9 @@
 
   .index-main__graphs
     .sum-graph
-      月使用額合計のグラフ
+      = line_chart @product_graphs.group_by_day(:created_at).sum(:price), xtitle: "日付", ytitle: "金額[円]" #合計金額の出し方？？分からん。。
     .average-graph
-      １日ごとの使用グラフ
+      = column_chart @product_graphs.group_by_day(:created_at).sum(:price), xtitle: "日付", ytitle: "金額[円]"
 
   .index-main__displays
     - @products.each do |product|
